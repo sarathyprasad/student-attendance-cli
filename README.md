@@ -64,15 +64,6 @@ A read-only interface allowing students to independently monitor their performan
 * **Personalized View:** Authenticate via password hashes to review personal metrics.
 * **Live Calculations:** Displays precise real-time performance summaries showing **Total Classes**, **Present Classes**, and exact **Calculated Percentages (e.g., 75.00%)**.
 
----
-## Logical Data Flow Diagram
-[ Admin Portal ] ─── Provisions ───► [ Faculty Roll ] & [ Student Roll ]
-          │                                   │                   │
-    Maps Together                             │                   │
-          ▼                                   ▼                   ▼
-   [ Class: CSE-1 ] ◄─── Logs Sheets ─── [ Subject: PSUC ]   [ Authenticates ]
-          │                                                       │
-          └────────────── Computes Metrics & Outputs Summary ─────┘
 
 ## 💻 Sample Terminal Interface View
 ```text
