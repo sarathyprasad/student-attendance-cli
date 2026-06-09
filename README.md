@@ -45,6 +45,35 @@ The project was developed to simulate real-world software engineering challenges
 
 ---
 
+## 🚀 Multi-Role Feature Breakdown
+
+### 🛡️ 1. Admin Service Portal
+The administrative gateway functions as the system's central data control tower:
+* **Faculty Management:** Add, configure, and provision unique Faculty IDs.
+* **Class & Subject Mapping:** Dynamically bind standard classes (e.g., `CSE-1`), Academic Years (`2025`), Subjects (`PSUC`), and specific instructors (`Faculty Roll: 501`) together.
+* **Student Onboarding:** Register students, batch records, and assign secure login passwords seamlessly.
+* **System Reports:** Generate master audit reports covering both Class Mappings and full Student Registration profiles.
+
+### 📋 2. Faculty Service Portal
+An optimized workspace for class coordinators designed to maintain high data accuracy with minimal friction:
+* **Add Attendance:** Instantly append daily presentation sheets to active file logs.
+* **Modify Attendance:** Correct historical log entries safely by pulling past records.
+
+### 🎓 3. Student Self-Service Portal
+A read-only interface allowing students to independently monitor their performance benchmarks securely:
+* **Personalized View:** Authenticate via password hashes to review personal metrics.
+* **Live Calculations:** Displays precise real-time performance summaries showing **Total Classes**, **Present Classes**, and exact **Calculated Percentages (e.g., 75.00%)**.
+
+---
+## Logical Data Flow Diagram
+[ Admin Portal ] ─── Provisions ───► [ Faculty Roll ] & [ Student Roll ]
+          │                                   │                   │
+    Maps Together                             │                   │
+          ▼                                   ▼                   ▼
+   [ Class: CSE-1 ] ◄─── Logs Sheets ─── [ Subject: PSUC ]   [ Authenticates ]
+          │                                                       │
+          └────────────── Computes Metrics & Outputs Summary ─────┘
+
 ## 💻 Sample Terminal Interface View
 ```text
 ===================================================
@@ -57,3 +86,5 @@ The project was developed to simulate real-world software engineering challenges
 5. Exit System
 ===================================================
 Enter your choice (1-5): _
+
+
