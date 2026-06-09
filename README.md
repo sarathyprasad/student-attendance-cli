@@ -65,17 +65,3 @@ A read-only interface allowing students to independently monitor their performan
 * **Live Calculations:** Displays precise real-time performance summaries showing **Total Classes**, **Present Classes**, and exact **Calculated Percentages (e.g., 75.00%)**.
 
 
-## 💻 Sample Terminal Interface View
-```text
-===================================================
-      STUDENT ATTENDANCE MANAGEMENT SYSTEM        
-===================================================
-1. Record Daily Attendance
-2. View Cumulative Attendance Report
-3. Generate Defaulter List (< 75%)
-4. Search Student Record by Roll Number
-5. Exit System
-===================================================
-Enter your choice (1-5): _
-
-
